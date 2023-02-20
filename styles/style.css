@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&family=Work+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Work Sans', 'Sans Serif';
+}
+
+#conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app {
+    margin: 50px auto;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.btn{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+#b1, #b2, #b4, #b5, #b7, #b8 {
+    border-right: 1px solid gray;
+}
+
+#b4, #b5, #b6 {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#result {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 400px) {
+    #conteiner {
+        gap: 20px
+    }
+
+    #app {
+        width: 300px;
+        height: 300px;
+    }
+
+    .btn{
+        font-size: 20px;
+        padding: 0;
+    }
+
+    #result {
+        font-size: 2em;
+    }
+}
